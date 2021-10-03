@@ -1,0 +1,305 @@
+@import "_null";
+@import "_cap";
+// ==================================
+@font-face {
+   font-family: "Gilroy";
+   src: url("../fonts/Gilroy-ExtraBold.eot");
+   src: local("☺"), url("../fonts/Gilroy-ExtraBold.woff") format("woff"),
+      url("../fonts/Gilroy-ExtraBold.ttf") format("truetype"), url("../fonts/Gilroy-ExtraBold.svg") format("svg");
+   font-weight: 500;
+   font-style: normal;
+}
+body._lock {
+   overflow: hidden;
+}
+// ====================================
+.wrapper {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   .fullscreen {
+      min-height: 100vh;
+      display: flex;
+   }
+   .fullscreen-header {
+      flex: 1 1 auto;
+      width: 100%;
+      max-width: 943.61px;
+      margin: 128px auto 104px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 15px;
+      background-color: #fff;
+
+      .fullscreen-header__cap {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         padding: 0 0 49.67px 0;
+         align-items: flex-end;
+         .name {
+            font-size: 47.34px;
+            font-family: "Gilroy";
+            line-height: 58.61px;
+            font-weight: 700;
+            color: #070707;
+         }
+         .about-person {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21.83px;
+            color: #000;
+            text-align: left;
+         }
+      }
+      // ? не знаю как правильно стелезировать картинку
+      .fullscreen-header__img {
+         width: 100%;
+         height: auto;
+         img {
+            max-width: 100%;
+         }
+      }
+   }
+   //=================/fullscreen======================
+
+   .about {
+      background-color: #f6f6f6;
+      padding: 120px 0 107px;
+      .container {
+         width: 100%;
+         max-width: 943.61px;
+         margin: 0 auto;
+         .about-body {
+            padding: 0 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .about-body__title {
+               margin: 0 0 18px 0;
+               font-family: "Gilroy";
+               font-size: 34px;
+               line-height: 42.9px;
+               color: #070707;
+            }
+            .about-body__text {
+               text-align: center;
+               max-width: 485.34px;
+               p {
+                  padding: 0 0 22px 0;
+                  font-family: "Be Vietnam Pro", sans-serif;
+                  font-size: 18px;
+                  line-height: 21.83px;
+               }
+               p:last-child {
+                  padding: 0;
+               }
+            }
+         }
+      }
+   }
+   //===============/about=======================
+
+   .skill {
+      .container {
+         .skill-body {
+            max-width: 937.85px;
+            margin: 0 auto;
+            padding: 91px 15px 100.6px 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .skill-body__title {
+               font-family: "Gilroy";
+               font-size: 34px;
+               line-height: 42.9px;
+               margin: 0 0 69.1px;
+               text-align: center;
+               color: #070707;
+            }
+            .skill-body__text {
+               font-family: "Be Vietnam Pro", sans-serif;
+               font-size: 18px;
+               line-height: 21.83px;
+               margin: 0 0 83.49px;
+               text-align: center;
+            }
+            .skill-body__subtitle {
+               display: flex;
+               flex-direction: row;
+               text-align: center;
+               justify-content: space-between;
+
+               .card {
+                  .img {
+                     padding: 27.99px;
+                     width: 100%;
+                     .program {
+                        max-width: 100%;
+                     }
+                  }
+                  P {
+                     text-align: center;
+                     font-family: "Gilroy";
+                     color: #828282;
+                     line-height: 17.33px;
+                     color: #070707;
+                  }
+                  .stars {
+                     margin: 41.41px 0 0 0;
+                     ul {
+                        display: flex;
+                        flex-direction: row;
+                        li {
+                           padding: 0 4.6px;
+                        }
+                        li:last-child {
+                           padding: 0 0 0 4.6px;
+                        }
+                        li:first-child {
+                           padding: 0 4.6px 0 0;
+                        }
+                     }
+                  }
+                  .stars-last {
+                     margin: 58.41px 0 0 0;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+// portfolio
+
+.wrapper-portfolio {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   .fullscreen-portfolio {
+      background-color: #f6f6f6;
+      min-height: 100vh;
+      display: flex;
+      max-width: 936, 24px;
+      .portfolio {
+         display: flex;
+         flex: 1 1 auto;
+         width: 100%;
+         margin: o auto;
+         text-align: center;
+         flex-direction: column;
+         justify-content: space-around;
+         padding: 0 15px;
+         .fullscreen__title {
+            font-family: "Gilroy";
+            font-size: 34px;
+            line-height: 42.9px;
+            color: #070707;
+         }
+         .fullscreen__work {
+            width: 100%;
+            height: auto;
+            img {
+               max-width: 100%;
+            }
+         }
+         .box-link {
+            .link {
+               text-decoration: underline;
+               color: #070707;
+               font-family: "Gilroy";
+               font-size: 18px;
+               line-height: 21.83px;
+            }
+            .link:hover {
+               text-decoration: none;
+               opacity: 0.8;
+            }
+         }
+      }
+   }
+}
+//==================/wrapper-portfolio========================
+
+.footer {
+   &-body {
+      max-width: 342.19px;
+      margin: 0 auto;
+      padding: 114.24px 15px 123.19px;
+      &__title {
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         .title {
+            font-size: 34px;
+            font-family: "Gilroy";
+            color: #070707;
+            line-height: 42.9px;
+            padding: 0 0 20.3px;
+         }
+         .text {
+            font-size: 18px;
+            font-family: "Be Vietnam Pro", sans-serif;
+            color: #070707;
+            line-height: 21.83px;
+         }
+         .button {
+            background-color: #070707;
+            border-radius: 20px;
+            width: 180.5px;
+            height: 42px;
+            margin: 29.6px auto 86px;
+            transition: all 0.3s linear;
+            a {
+               font-size: 18px;
+               line-height: 22.28px;
+               color: #fff;
+               font-family: "Be Vietnam Pro", sans-serif;
+            }
+         }
+         .button:hover {
+            background-color: #f6f6f6;
+            box-shadow: 4px 8px 10px #070707;
+            a {
+               color: #070707;
+            }
+         }
+      }
+      &__social {
+         padding: 0 0 45.76px 0;
+         ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            li {
+               img {
+                  max-width: 100%;
+                  transition: all 0.3s linear;
+               }
+               img:hover {
+                  width: 90%;
+                  height: auto;
+                  opacity: 0.8;
+               }
+            }
+         }
+      }
+      &__subtitle {
+         max-width: 243.1px;
+         margin: 0 auto;
+         text-align: center;
+         font-family: "Be Vietnam Pro", sans-serif;
+         font-size: 14px;
+         line-height: 16.98px;
+         color: #828282;
+      }
+   }
+}
+
+// ==================================
+@import "_media";
